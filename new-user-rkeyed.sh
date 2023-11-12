@@ -25,7 +25,7 @@ adduser "$USERNAME"
 usermod -aG sudo "$USERNAME"
 
 # # Create the .ssh folder in the user's home directory
-# mkdir -p "/home/$USERNAME/.ssh"
+mkdir -p "/home/$USERNAME/.ssh"
 
 # Copy the authorized key file from the root user to the user's .ssh folder
 cp ~/.ssh/authorized_keys "/home/$USERNAME/.ssh/"
