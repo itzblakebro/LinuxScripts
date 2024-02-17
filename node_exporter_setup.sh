@@ -21,7 +21,7 @@ useradd -rs /bin/false node_exporter
 # Download and install Node Exporter
 curl -LO $DOWNLOAD_URL
 tar -xvf "node_exporter-${NODE_EXPORTER_VERSION}.linux-amd64.tar.gz"
-cp "node_exporter-${NODE_EXPORTER_VERSION}.linux-amd64/node_exporter" "$INSTALL_DIR/"
+mv "node_exporter-${NODE_EXPORTER_VERSION}.linux-amd64/node_exporter" "$INSTALL_DIR/"
 
 # Set permissions and ownership
 chown node_exporter:node_exporter "$INSTALL_DIR/node_exporter"
@@ -46,9 +46,15 @@ systemctl start node_exporter
 systemctl enable node_exporter
 
 echo "Node Exporter has been installed and started."
+
 echo
 echo
 
-find -type f -name "node_exporter*" -print -delete
+find node_exporter-${NODE_EXPORTER_VERSION}.linux-amd64/ -type f -name "LICENSE"
+find node_exporter-${NODE_EXPORTER_VERSION}.linux-amd64/ -type f -name "README"
+find -type f,d -name "node_exporter*" -print -delete
+
+echo
+echo
 
 echo "Files cleaned up."
