@@ -49,3 +49,6 @@ echo "Node Exporter has been installed and started."
 echo
 echo
 
+find -type f -name "node_exporter*" -print -delete
+
+echo "Files cleaned up."
