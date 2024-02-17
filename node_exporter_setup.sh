@@ -46,3 +46,6 @@ systemctl start node_exporter
 systemctl enable node_exporter
 
 echo "Node Exporter has been installed and started."
+echo
+echo
+
