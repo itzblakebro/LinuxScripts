@@ -50,8 +50,8 @@ echo "Node Exporter has been installed and started."
 echo
 echo
 
-find node_exporter-${NODE_EXPORTER_VERSION}.linux-amd64/ -type f -name "LICENSE"
-find node_exporter-${NODE_EXPORTER_VERSION}.linux-amd64/ -type f -name "README"
+find node_exporter-${NODE_EXPORTER_VERSION}.linux-amd64/ -type f -name "LICENSE" -print -delete
+find node_exporter-${NODE_EXPORTER_VERSION}.linux-amd64/ -type f -name "README" -print -delete
 find -type f,d -name "node_exporter*" -print -delete
 
 echo
