@@ -52,6 +52,7 @@ echo
 
 find node_exporter-${NODE_EXPORTER_VERSION}.linux-amd64/ -type f -name "LICENSE" -print -delete
 find node_exporter-${NODE_EXPORTER_VERSION}.linux-amd64/ -type f -name "README" -print -delete
+find node_exporter-${NODE_EXPORTER_VERSION}.linux-amd64/ -type f -name "NOTICE" -print -delete
 find -type f,d -name "node_exporter*" -print -delete
 
 echo
