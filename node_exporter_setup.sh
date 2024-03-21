@@ -45,9 +45,9 @@ systemctl daemon-reload
 systemctl start node_exporter
 systemctl enable node_exporter
 
-echo "Node Exporter has been installed and started."
-
 echo
+echo "Node Exporter has been installed and started."
+echo "Cleaning up files."
 echo
 
 find node_exporter-${NODE_EXPORTER_VERSION}.linux-amd64/ -type f -name "LICENSE" -print -delete
