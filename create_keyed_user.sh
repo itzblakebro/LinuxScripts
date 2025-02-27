@@ -1,5 +1,5 @@
 ## Create a basic user and move the key files from root to that user
-## Usage chmod +x new-user-rkeyed.sh ; sudo ./new-user-rkeyed.sh username
+## Usage chmod +x create_keyed_user.sh ; sudo ./create_keyed_user username
 
 #!/bin/bash
 
