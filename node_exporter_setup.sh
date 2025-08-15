@@ -7,7 +7,7 @@ if [ "$EUID" -ne 0 ]; then
 fi
 
 # Define the Node Exporter version to install (you can change this)
-NODE_EXPORTER_VERSION="1.7.0"
+NODE_EXPORTER_VERSION="1.9.1"
 
 # Define the download URL for Node Exporter
 DOWNLOAD_URL="https://github.com/prometheus/node_exporter/releases/download/v$NODE_EXPORTER_VERSION/node_exporter-$NODE_EXPORTER_VERSION.linux-amd64.tar.gz"
